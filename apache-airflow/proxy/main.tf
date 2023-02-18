@@ -10,7 +10,7 @@ resource "google_compute_instance" "proxy_instance" {
 
       sudo apt-get update -qqq
       sudo apt-get install curl nginx -qqq
-      curl https://raw.githubusercontent.com/himewel/airflow_celery_workers/main/proxy -o proxy
+      curl https://raw.githubusercontent.com/tleedepriest/gcs_usgs_batch_pipeline/main/proxy -o proxy
 
       server_name=$(curl -s http://whatismyip.akamai.com/)
       sed -i "s/SERVER-NAME/$server_name/g" proxy
