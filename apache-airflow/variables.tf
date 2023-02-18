@@ -40,9 +40,9 @@ variable "webserver" {
   default = {
     username  = "admin"
     password  = "admin"
-    firstname = "Welbert"
-    lastname  = "Castro"
-    email     = "welberthime@hotmail.com"
+    firstname = "Travis"
+    lastname  = "DePriest"
+    email     = "tleedepriest@gmail.com"
     role      = "Admin"
   }
 }
@@ -75,5 +75,5 @@ variable "internal_firewall_ip_ranges" {
 
 variable "number_of_workers" {
   type    = number
-  default = 4
+  default = 1
 }
